@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800&display=swap" rel="stylesheet">
     <title>spotifyweb</title>
   </head>
   <body>
@@ -18,24 +18,34 @@
       <div class="clearfix main">
         <!-- SIDEBAR -->
         <div class="fl sidebar">
-          <img class="logo-img" src="img/logo.svg" alt="logo spotify">
-          <ul>
-            <li><a href="#"><img src="img/home.svg" alt="home">Home</a></li>
-            <li><a href="#"><img src="img/search.svg" alt="search">Cerca</a></li>
-            <li><a href="#"><img src="img/libreria.svg" alt="libreria">La tua libreria</a></li>
-          </ul>
-          <ul>
-            <li><a href="#" class="list-title">Playlist</a></li>
-            <li><a href="#">Crea Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-            <li><a href="#">Nome Playlist</a></li>
-          </ul>
-
+          <div class="sidebar-top">
+            <img class="logo-img" src="img/logo.svg" alt="logo spotify">
+            <ul>
+              <li><a href="#"><img src="img/home.svg" alt="home">Home</a></li>
+              <li><a href="#"><img src="img/search.svg" alt="search">Cerca</a></li>
+              <li><a href="#"><img src="img/libreria.svg" alt="libreria">La tua libreria</a></li>
+            </ul>
+            <ul>
+              <li><a href="#" class="list-title">Playlist</a></li>
+              <li><a href="#">
+                <div class="square-plus"><i class="fa fa-plus" aria-hidden="true"></i></div>
+                Crea Playlist
+              </a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+              <li><a href="#">Nome Playlist</a></li>
+            </ul>
+          </div>
+          <div class="sidebar-bottom">
+            <div class=""><a href="#"><i class="fa fa-arrow-circle-o-down" aria-hidden="true"></i>  Installa app</a></div>
+            <div class="profile"><a href="#">
+              <div class="profile-img"></div>John Doe
+            </a></div>
+          </div>
         </div>
         <!-- MUSIC BOX -->
         <div class="fl music-box-container">

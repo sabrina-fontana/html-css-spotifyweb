@@ -10,15 +10,19 @@
   max-width: 100%;
   height: 100vh;
   background-color: black;
-  color: #a3a3a3;
+  color: #888;
   font-family: 'Raleway', sans-serif;
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 12px;
+  font-weight: 700;
 }
 
 a {
   text-decoration: none;
-  color: #a3a3a3;
+  color: #888;
+}
+
+a:hover {
+  color: white;
 }
 
 ul {
@@ -52,25 +56,26 @@ ul {
   border-radius: 25px;
 }
 
+.upgrade:hover {
+  font-size: 14px;
+}
+
 /* SIDEBAR */
 .sidebar {
   width: 15%;
-  padding: 15px;
+  height: calc(100% - 80px);
+  padding: 20px 20px 0 20px;
   display: flex;
   flex-direction: column;
-  color:
+  justify-content: space-between;
 }
 
 .logo-img {
   width: 140px;
 }
 
-.sidebar ul {
-  padding: 10px 0;
-}
-
-.sidebar li {
-  padding: 7px 0;
+.sidebar ul, .sidebar li {
+  padding: 6px 0;
 }
 
 .sidebar li img {
@@ -79,14 +84,48 @@ ul {
   margin-right: 4px;
 }
 
+.square-plus {
+  display: inline-block;
+  width: 33px;
+  height: 33px;
+  line-height: 33px;
+  background-color: #a3a3a3;
+  color: black;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 5px;
+}
+
 .list-title {
   text-transform: uppercase;
   color: white;
 }
+
 .main {
   height: 100%;
 }
 
+.sidebar-bottom * {
+  margin: 6px 0;
+}
+
+.profile {
+  border-top: 1px solid;
+}
+
+.profile-img {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #a3a3a3;
+  background-image: url(../img/profile.svg);
+  background-position: center;
+  vertical-align: middle;
+  margin-right: 5px;
+}
 
 /* MUSIC BOX */
 .music-box-container {
