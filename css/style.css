@@ -28,20 +28,29 @@
   text-align: center;
 }
 
+/* UPGRADE BUTTON */
+.upgrade {
+  position: fixed;
+  right: 0;
+  z-index: 1;
+}
+
 /* SIDEBAR */
 .sidebar {
   width: 20%;
 }
 
-/* MUSIC BOX */
-.music-box-container {
-  width: 80%;
+.main {
+  height: 100%
 }
 
+
+/* MUSIC BOX */
 .music-box {
+  width: 80%;
+  height: 100%;
   background-color: #262626;
   overflow-y: auto;
-  height: 600px;
 }
 
 .box {
@@ -53,7 +62,7 @@
 
 /* BARRA RIPRODUZIONE MUSICA */
 .music-player {
-  height: 100px;
+  height: 80px;
   width: 100%;
   background-color: #282828;
   position: absolute;
