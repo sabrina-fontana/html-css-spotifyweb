@@ -169,13 +169,70 @@ ul {
   vertical-align: middle;
 }
 
-.music-player .flex-item-left * {
+.music-player .flex-item-left > * {
   vertical-align: middle;
-  margin: 5px;
+  margin: 10px;
 }
 
 .music-player .song-title {
   display: inline-block;
+}
+
+.music-player .flex-item-left i {
+  font-size: 15px;
+}
+
+.player-buttons > * {
+  margin: 5px 15px;
+  font-size: 15px;
+  color: white;
+  vertical-align: middle;
+}
+
+.player-buttons a:nth-child(3) {
+  font-size: 25px;
+}
+
+.music-progress-bar {
+  display: inline-block;
+  vertical-align: middle;
+  width: 400px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #888;
+}
+
+.mymusic-progress-bar {
+  width: 15%;
+  height: 3px;
+  background-color: white;
+  text-align: left;
+}
+
+.time {
+  padding: 0 10px;
+  color: white;
+}
+
+.music-player .flex-item-right > * {
+  margin: 10px;
+  color: white;
+}
+
+.volume-progress-bar {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100px;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #888;
+}
+
+.myvolume-progress-bar {
+  width: 30%;
+  height: 3px;
+  background-color: white;
+  text-align: left;
 }
 
 /* MEDIAQUERY */
