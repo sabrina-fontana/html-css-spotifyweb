@@ -1,0 +1,61 @@
+/* COMMON SETTINGS, FONT AND UTILITY CLASSES */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100vw;
+  max-width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.fl {
+  float: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* SIDEBAR */
+.sidebar {
+  width: 20%;
+}
+
+/* MUSIC BOX */
+.music-box-container {
+  width: 80%;
+}
+
+.music-box {
+  background-color: #262626;
+  overflow-y: auto;
+  height: 600px;
+}
+
+.box {
+  background-color: red;
+  border: 1px solid black;
+  height: 200px;
+  width: 500px;
+}
+
+/* BARRA RIPRODUZIONE MUSICA */
+.music-player {
+  height: 100px;
+  width: 100%;
+  background-color: #282828;
+  position: absolute;
+  bottom: 0;
+}
