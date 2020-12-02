@@ -70,6 +70,10 @@ ul {
   justify-content: space-between;
 }
 
+[class^="visible-xs"] {
+ display: none;
+}
+
 .logo-img {
   width: 140px;
 }
@@ -153,4 +157,62 @@ ul {
   background-color: #282828;
   position: absolute;
   bottom: 0;
+}
+
+/* MEDIAQUERY */
+/* per medium*/
+@media screen and (max-width: 1199px) {
+ .sidebar {
+   width: 20%;
+ }
+
+ .music-box-container {
+   width: 80%;
+ }
+}
+
+/* per small*/
+@media screen and (max-width: 991px) {
+ .sidebar {
+   width: 30%;
+ }
+
+ .music-box-container {
+   width: 70%;
+ }
+}
+
+/* per extrasmall*/
+@media screen and (max-width: 767px) {
+  [class^="visible-xs-"] {
+   display: inline-block;
+   width: 40px;
+   font-size: 22px;
+ }
+
+  [class^="visible-xs-"] * {
+    margin: 5px;
+  }
+
+  .sidebar {
+    width: 10%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+  }
+
+  .visible-xs-bottom .profile-img {
+    width: 30px;
+    height: 30px;
+    margin: 0;
+  }
+
+  .music-box-container {
+    width: 90%;
+  }
+
+ .sidebar-top, .sidebar-bottom {
+   display: none;
+ }
+
 }
