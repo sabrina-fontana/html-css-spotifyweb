@@ -57,8 +57,14 @@ ul {
 
 .sidebar-top {
   height: calc(100% - 75px);
-  overflow-y: auto;
+  overflow-y: hidden;
   padding: 20px 20px 0 20px;
+}
+
+.sidebar-top-2 {
+  /* 100%(altezza della sidebar top) meno altezza di img(42px) e sidebartop1(123px) */
+  height: calc(100% - 165px);
+  overflow-y: auto;
 }
 
 .sidebar-bottom {
@@ -95,7 +101,6 @@ ul {
   width: 3px;
   height: 30px;
   background-color: lightgreen;
-
 }
 
 .square-plus {
@@ -144,7 +149,7 @@ ul {
 .upgrade {
   width: 85%;
   height: 60px;
-  background-color: rgba(8, 11, 18, 0.5);
+  background-color: rgba(8, 11, 18, 0.6);
   position: fixed;
   text-align: right;
   right: 0;
@@ -170,7 +175,7 @@ ul {
   padding-top: 60px;
   width: 85%;
   height: calc(100% - 80px);
-  background-color: #262626;
+  background-color: #141922;
   overflow-y: auto;
 }
 
