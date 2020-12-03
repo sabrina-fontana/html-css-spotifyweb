@@ -6,14 +6,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <title>spotifyweb</title>
   </head>
   <body>
     <!-- WRAPPER DELLA PAGINA -->
     <div class="wrapper">
-      <!-- UPGRADE BUTTON -->
-      <a href="#"><div class="upgrade white">effettua l'upgrade</div></a>
       <!-- CONTENITORE PRINCIPALE -->
       <div class="clearfix main">
         <!-- SIDEBAR -->
@@ -59,6 +57,11 @@
         </div>
         <!-- MUSIC BOX -->
         <div class="fl music-box-container">
+          <!-- UPGRADE BUTTON -->
+          <div class="upgrade">
+            <a href="#"><span class="upgrade-btn white">effettua l'upgrade</span></a>
+          </div>
+
           <div class="music-box">
             music box
             <div class="box"></div>
@@ -76,8 +79,10 @@
             <span class="white">Sinister</span><br>
             <span>Brano Nome</span>
           </div>
-          <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
-          <a href="#"><i class="fa fa-folder-o" aria-hidden="true"></i></a>
+          <div class="song-buttons">
+            <a href="#"><i class="fa fa-heart-o" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-folder-o" aria-hidden="true"></i></a>
+          </div>
         </div>
         <div class="flex-item-center">
           <div class="player-buttons">
