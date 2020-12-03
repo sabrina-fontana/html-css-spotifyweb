@@ -146,7 +146,6 @@ ul {
   font-size: 14px;
 }
 
-
 /* MUSIC BOX */
 .music-box {
   padding-top: 60px;
@@ -216,10 +215,72 @@ ul {
 .song-box .song-image {
   width: 190px;
   height: 190px;
+  background-size: contain;
 }
 
-.song-box .song-image img {
+.recent .song-box:first-child .song-image {
+  background-image: url(../img/metal_lifting.jpg);
+}
+
+.recent .song-box:nth-child(2) .song-image {
+  background-image: url(../img/stranger.jpeg);
+}
+
+.recent .song-box:nth-child(3) .song-image {
+  background-image: url(../img/aquietplace.jpeg);
+}
+
+.recent .song-box:nth-child(4) .song-image {
+  background-image: url(../img/split.jpeg);
+}
+
+.recent .song-box:nth-child(5) .song-image {
+  background-image: url(../img/cure.jpeg);
+}
+
+.recent .song-box:last-child .song-image {
+  background-image: url(../img/sinister.jpeg);
+}
+
+.for-you .song-box:first-child .song-image {
+  background-image: url(../img/radar.jpeg);
+}
+
+.for-you .song-box:nth-child(2) .song-image {
+  background-image: url(../img/mixdaily.jpeg);
+}
+
+.artist .song-box:first-child .song-image {
+  background-image: url(../img/youg.jpeg);
+}
+
+.artist .song-box:nth-child(2) .song-image {
+  background-image: url(../img/einaudi.jpeg);
+}
+
+.shadow {
   width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.shadow i {
+  color: white;
+  display: none;
+  font-size: 50px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.song-image:hover .shadow {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.song-image:hover .shadow i {
+  display: inline;
 }
 
 .song-box .song-title {
@@ -227,7 +288,7 @@ ul {
   font-size: 16px;
 }
 
-.music-section:last-child .song-image img {
+.artist .song-image, .artist .shadow {
   border-radius: 50%;
 }
 
@@ -269,14 +330,23 @@ ul {
   font-size: 15px;
 }
 
+.player-buttons {
+  height: 30px;
+}
+
 .player-buttons > * {
   font-size: 15px;
   color: white;
   vertical-align: middle;
 }
 
-.player-buttons a:nth-child(3) {
+.fa-play-circle-o {
   font-size: 25px;
+}
+
+.fa-play-circle-o:hover {
+  font-size: 30px;4
+  display: block;
 }
 
 .music-progress-bar {
@@ -403,7 +473,7 @@ ul {
 
  .song-box {
    margin-right: 10px;
-   max-width: 150px;
+   max-width: 160px;
  }
 
  .song-box .song-image {
