@@ -51,7 +51,6 @@ ul {
 .sidebar {
   width: 15%;
   height: calc(100% - 80px);
-  padding: 20px 20px 0 20px;
   display: flex;
   flex-direction: column;
 }
@@ -59,6 +58,11 @@ ul {
 .sidebar-top {
   height: calc(100% - 75px);
   overflow-y: auto;
+  padding: 20px 20px 0 20px;
+}
+
+.sidebar-bottom {
+  padding: 0 20px;
 }
 
 [class^="visible-xs"] {
@@ -77,6 +81,21 @@ ul {
   width: 25px;
   vertical-align: middle;
   margin-right: 4px;
+}
+
+.sidebar-top-1 li:first-child {
+  position: relative;
+}
+
+.sidebar-top-1 li:first-child:before{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  left: -20px;
+  width: 3px;
+  height: 30px;
+  background-color: lightgreen;
+
 }
 
 .square-plus {
@@ -281,6 +300,7 @@ ul {
 
 .song-image:hover .shadow i {
   display: inline;
+  font-size: 50px;
 }
 
 .song-box .song-title {
@@ -331,7 +351,7 @@ ul {
 }
 
 .player-buttons {
-  height: 30px;
+  min-height: 30px;
 }
 
 .player-buttons > * {
@@ -345,8 +365,7 @@ ul {
 }
 
 .fa-play-circle-o:hover {
-  font-size: 30px;4
-  display: block;
+  font-size: 30px;
 }
 
 .music-progress-bar {
@@ -354,7 +373,7 @@ ul {
   vertical-align: middle;
   width: 400px;
   height: 3px;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #888;
 }
 
@@ -363,6 +382,25 @@ ul {
   height: 3px;
   background-color: white;
   text-align: left;
+  position: relative;
+}
+
+.music-progress-bar:hover .mymusic-progress-bar {
+  background-color: lightgreen;
+  height: 5px;
+}
+
+.music-progress-bar:hover .mymusic-progress-bar:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  right: -7px;
+  top: -4px;
+  width: 14px;
+  height: 14px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: white;
 }
 
 .time {
@@ -379,7 +417,7 @@ ul {
   vertical-align: middle;
   width: 100px;
   height: 3px;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #888;
 }
 
@@ -388,6 +426,25 @@ ul {
   height: 3px;
   background-color: white;
   text-align: left;
+  position: relative;
+}
+
+.volume-progress-bar:hover .myvolume-progress-bar {
+  background-color: lightgreen;
+  height: 5px;
+}
+
+.volume-progress-bar:hover .myvolume-progress-bar:after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  right: -6px;
+  top: -4px;
+  width: 12px;
+  height: 12px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: white;
 }
 
 /* MEDIAQUERY */
