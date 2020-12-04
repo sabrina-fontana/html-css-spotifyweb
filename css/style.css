@@ -74,7 +74,6 @@ ul {
 }
 
 .sidebar-top {
-  height: calc(100% - 75px);
   overflow-y: hidden;
   padding: 20px 20px 0 20px;
 }
@@ -82,6 +81,7 @@ ul {
 .sidebar-top-2 {
   /* 100%(altezza della sidebar top) meno altezza di img(42px) e sidebartop1(123px) */
   height: calc(100% - 165px);
+  /* overflow auto funziona solo con un'altezza determinata */
   overflow-y: auto;
 }
 
@@ -135,6 +135,10 @@ ul {
   margin-right: 5px;
 }
 
+.square-plus-link:hover .square-plus {
+  background-color: white;
+}
+
 .list-title {
   text-transform: uppercase;
 }
@@ -181,13 +185,11 @@ ul {
   padding: 10px 20px;
   border: 1.5px solid;
   border-radius: 25px;
-  margin-right: 25px;
-  margin-top: 10px;
-  color: white;
+  margin: 10px 25px 0 0;
 }
 
 .upgrade-btn:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 /* MUSIC BOX */
@@ -195,7 +197,7 @@ ul {
   padding-top: 60px;
   width: 85%;
   height: calc(100% - 80px);
-  background-color: #141922;
+  background-image: linear-gradient(#343638, #141922);
   overflow-y: auto;
 }
 
@@ -235,7 +237,6 @@ ul {
 }
 
 .song-row {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
 }
@@ -269,7 +270,7 @@ ul {
 }
 
 .song-image:hover img {
-  opacity: 0.4;
+  opacity: 0.6;
 }
 
 .song-image:hover i {
@@ -324,7 +325,7 @@ ul {
 }
 
 .player-buttons {
-  min-height: 30px;
+  height: 30px;
 }
 
 .player-buttons > * {
@@ -427,11 +428,7 @@ ul {
    width: 20%;
  }
 
- .music-box {
-   width: 80%;
- }
-
- .upgrade {
+ .music-box, .upgrade {
    width: 80%;
  }
 
@@ -451,11 +448,7 @@ ul {
    width: 35%;
  }
 
- .music-box {
-   width: 65%;
- }
-
- .upgrade {
+ .music-box, .upgrade {
    width: 65%;
  }
 
@@ -497,11 +490,7 @@ ul {
     margin: 0;
   }
 
-  .music-box {
-    width: 90%;
-  }
-
-  .upgrade {
+  .music-box, .upgrade {
     width: 90%;
   }
 
@@ -510,7 +499,7 @@ ul {
  }
 
  .music-progress-bar {
-   width: 100px;
+   width: 150px;
  }
 
  .flex-item-left > *, .song-buttons > *, .player-buttons > *, .flex-item-right > * {
@@ -519,6 +508,10 @@ ul {
 
  .music-player img {
    width: 30px;
+ }
+
+ .music-player .song-buttons {
+   display: none;
  }
 
  .volume-progress-bar {
@@ -532,5 +525,4 @@ ul {
  .time {
    padding: 0 3px;
  }
-
 }
