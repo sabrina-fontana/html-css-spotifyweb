@@ -91,7 +91,6 @@ ul {
 
 [class^="visible-xs"] {
  display: none;
- /* text-align: center; */
 }
 
 .logo-img {
@@ -177,16 +176,18 @@ ul {
 }
 
 .upgrade-btn {
+  display: inline-block;
   text-transform: uppercase;
-  padding: 10px 30px;
+  padding: 10px 20px;
   border: 1.5px solid;
   border-radius: 25px;
-  margin-right: 20px;
-  line-height: 60px;
+  margin-right: 25px;
+  margin-top: 10px;
+  color: white;
 }
 
 .upgrade-btn:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 /* MUSIC BOX */
@@ -272,8 +273,7 @@ ul {
 }
 
 .song-image:hover i {
-  display: inline;
-  font-size: 50px;
+  display: block;
 }
 
 .song-box .song-title {
@@ -333,12 +333,12 @@ ul {
   vertical-align: middle;
 }
 
-.fa-play-circle-o {
+.music-player .fa-play-circle-o {
   font-size: 25px;
 }
 
-.fa-play-circle-o:hover {
-  font-size: 30px;
+.music-player .fa-play-circle-o:hover {
+  transform: scale(1.3);
 }
 
 .music-progress-bar {
@@ -438,7 +438,6 @@ ul {
  .song-box {
    width: calc((100% / 4) - 25px);
  }
-
 
  .music-progress-bar {
    width: 300px;
